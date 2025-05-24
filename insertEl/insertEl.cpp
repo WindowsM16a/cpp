@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
     cout << "hey" << endl;
+    cout << "boo" << endl;
 
     int myArray[5] = {2, 5, 3, 7, 4};
     int position, value;
