@@ -5,23 +5,24 @@ using namespace std;
 
 int main()
 {
-    cout << "hey" << endl;
-    cout << "boo" << endl;
 
-    int myArray[5] = {2, 5, 3, 7, 4};
+    int myArray[6] = {2, 5, 3, 7, 4};
     int position, value;
-
-    int myArrayLength = sizeof(myArray) / sizeof(myArray[0]);
+    int myArrayLength = 5;
 
     cout << "Enter a value to insert" << endl;
-
     cin >> value;
 
     cout << "Enter the position to put" + value << endl;
-
     cin >> position;
 
+    for (int i = myArrayLength; i > position; i--)
+    {
+        myArray[i] = myArray[i - 1];
+    }
+
     myArray[position] = value;
+    myArrayLength++;
 
     for (int i = 0; i < myArrayLength; i++)
     {

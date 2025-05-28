@@ -5,8 +5,6 @@ using namespace std;
 
 int main()
 {
-    cout << "heyy" << endl;
-
     int myArray[10] = {1, 2, 3, 4, 5, 8, 7, 6, 9, 10};
     int myArrayLength = sizeof(myArray) / sizeof(myArray[0]);
     int searchValue;

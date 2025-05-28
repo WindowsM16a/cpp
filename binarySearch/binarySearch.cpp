@@ -8,7 +8,6 @@ void binarySearch(int target);
 
 int main()
 {
-    cout << "hey" << endl;
     int searchValue;
     cout << "Enter the value whose index you want to find" << endl;
     cin >> searchValue;
